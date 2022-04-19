@@ -57,11 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ImpactController.cs" />
+    <Compile Include="Assets\PlayerHealthController.cs" />
+    <Compile Include="Assets\UIController.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\CameraMove.cs" />
-    <Compile Include="Assets\UIController.cs" />
-    <Compile Include="Assets\PlayerHealthController.cs" />
     <Compile Include="Assets\MeleeAttack.cs" />
+    <Compile Include="Assets\EventController.cs" />
+    <Compile Include="Assets\SceneController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

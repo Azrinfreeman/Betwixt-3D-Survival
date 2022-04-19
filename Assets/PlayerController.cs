@@ -43,6 +43,21 @@ public class PlayerController : MonoBehaviour
             velocity.y = -2f;
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            UIController.instance.toggle = !UIController.instance.toggle;
+            if (UIController.instance.toggle)
+            {
+
+                UIController.instance.showPause();
+            }
+            else
+            {
+
+                UIController.instance.hidePause();
+            }
+        }
+
         if (Input.GetButtonDown("Jump") && isGrounded && !anim.GetCurrentAnimatorStateInfo(0).IsTag("isWalking"))
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
